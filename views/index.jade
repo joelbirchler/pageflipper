@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  iframe(height='100%', width='100%')
+  #flipper
+    span.previous &larr;
+    &nbsp;
+    span.next &rarr;
+    
+  script
+    $(function() { 
+      init({gist: '#{gist}', file: '#{file}', ns: '#{ns}', offset: #{offset}, page: #{page}, timer: "#{timer}"});
+    });
