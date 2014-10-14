@@ -6,8 +6,8 @@ block content
     span.previous &larr;
     &nbsp;
     span.next &rarr;
-    
-  script
-    $(function() { 
+
+  script(type="text/javascript").
+    $(function() {
       init({gist: '#{gist}', file: '#{file}', ns: '#{ns}', offset: #{offset}, page: #{page}, timer: "#{timer}"});
     });
